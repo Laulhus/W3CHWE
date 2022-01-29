@@ -12,6 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/Laulhus/W3CHWE-edgaralcolea.git"
   },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
   "babel": {
     "env": {
       "test": {
