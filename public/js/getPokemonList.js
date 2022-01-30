@@ -1,6 +1,8 @@
-export default async function getPokemonList() {
+export default async function getPokemonList(index) {
   try {
-    const fetchedData = await fetch("https://pokeapi.co/api/v2/pokemon/");
+    const fetchedData = await fetch(
+      `https://pokeapi.co/api/v2/pokemon/?offset=${index}&limit=20`
+    );
     const allPokemon = await fetchedData.json();
     const pagePokemon = allPokemon.results;
     const pokemonWithId = [];

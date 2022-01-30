@@ -71,3 +71,18 @@ body {
     }
   }
 }
+.page-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+
+  li {
+    cursor: pointer;
+    color: #fff;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: rgb(43, 202, 149);
+  }
+}
