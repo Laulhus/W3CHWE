@@ -13,7 +13,8 @@ export default class PageComponent extends Component {
     this.element.innerHTML = `<header>
     <ul class="navbar">
     </ul></header>
-    <main><ul class="pokemon-list"></ul></main>`;
+    <main><ul class="pokemon-list"></ul>
+    <ul class="page-buttons"></ul></main>`;
   }
 
   createNavButtons() {
