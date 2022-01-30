@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --watchAll --verbose",
     "coverage": "jest --coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "compile": "npx sass public/css/styles.scss public/css/styles.css --watch"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
-    "husky": "^7.0.0"
+    "husky": "^7.0.0",
+    "sass": "^1.49.0"
   }
 }

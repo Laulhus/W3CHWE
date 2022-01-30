@@ -9,7 +9,7 @@ export default class PageComponent extends Component {
 
   generateHTML() {
     this.element.innerHTML = `<header>
-    <ul>
+    <ul class="navbar">
     <li>All Pokemon</li>
     <li>My Pokemon</li>
     </ul></header>
