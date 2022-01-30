@@ -1,3 +1,5 @@
+/* eslint-disable no-await-in-loop */
+/* eslint-disable no-restricted-syntax */
 export default async function getSprites(list) {
   try {
     for (const pokemon of list) {
@@ -11,4 +13,5 @@ export default async function getSprites(list) {
   } catch (error) {
     error.message = "Unexpected error";
   }
+  return 0;
 }

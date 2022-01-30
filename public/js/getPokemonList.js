@@ -3,12 +3,15 @@ export default async function getPokemonList() {
     const fetchedData = await fetch("https://pokeapi.co/api/v2/pokemon/");
     const allPokemon = await fetchedData.json();
     const pagePokemon = allPokemon.results;
+    const pokemonWithId = [];
     pagePokemon.forEach((pokemon) => {
-      [pokemon.id] = /\d+(?!.*\d)/.exec(pokemon.url);
+      const newPokemon = { ...pokemon };
+      [newPokemon.id] = /\d+(?!.*\d)/.exec(newPokemon.url);
+      pokemonWithId.push(newPokemon);
     });
-
-    return pagePokemon;
+    return pokemonWithId;
   } catch (error) {
     error.message = "Unexpected error";
   }
+  return 0;
 }
