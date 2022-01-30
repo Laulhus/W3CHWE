@@ -10,6 +10,6 @@ export default class CardComponent extends Component {
   }
 
   generateHTML() {
-    this.element.innerHTML = `<p>${this.pokemon.name}</p>`;
+    this.element.innerHTML = `<img src=${this.pokemon.sprite}><p>${this.pokemon.name}</p>`;
   }
 }
